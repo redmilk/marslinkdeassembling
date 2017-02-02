@@ -26,12 +26,12 @@ class Message: NSObject, DateSortable {
   
   let date: Date
   let text: String
-  let user: User
+  let name: String
   
-  init(date: Date, text: String, user: User) {
+  init(date: Date, text: String, name: String) {
     self.date = date
     self.text = text
-    self.user = user
+    self.name = name
   }
   
 }

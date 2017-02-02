@@ -10,30 +10,17 @@
 		2997D4951DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997D4941DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift */; };
 		29E2CDD81DC7B4CF00A9E0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDB51DC7B4CF00A9E0F4 /* AppDelegate.swift */; };
 		29E2CDDA1DC7B4CF00A9E0F4 /* DateSortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBA1DC7B4CF00A9E0F4 /* DateSortable.swift */; };
-		29E2CDDB1DC7B4CF00A9E0F4 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBB1DC7B4CF00A9E0F4 /* JournalEntry.swift */; };
+		29E2CDDB1DC7B4CF00A9E0F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBB1DC7B4CF00A9E0F4 /* Post.swift */; };
 		29E2CDDC1DC7B4CF00A9E0F4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBC1DC7B4CF00A9E0F4 /* Message.swift */; };
-		29E2CDDD1DC7B4CF00A9E0F4 /* SolFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBD1DC7B4CF00A9E0F4 /* SolFormatter.swift */; };
-		29E2CDDE1DC7B4CF00A9E0F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBE1DC7B4CF00A9E0F4 /* User.swift */; };
-		29E2CDDF1DC7B4CF00A9E0F4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBF1DC7B4CF00A9E0F4 /* Weather.swift */; };
 		29E2CDE01DC7B4CF00A9E0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E2CDC11DC7B4CF00A9E0F4 /* Assets.xcassets */; };
 		29E2CDE21DC7B4CF00A9E0F4 /* OCRAStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29E2CDC31DC7B4CF00A9E0F4 /* OCRAStd.otf */; };
-		29E2CDE61DC7B4CF00A9E0F4 /* JournalLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDC91DC7B4CF00A9E0F4 /* JournalLoader.swift */; };
 		29E2CDE71DC7B4CF00A9E0F4 /* Pathfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCA1DC7B4CF00A9E0F4 /* Pathfinder.swift */; };
 		29E2CDE81DC7B4CF00A9E0F4 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCB1DC7B4CF00A9E0F4 /* TextSize.swift */; };
 		29E2CDE91DC7B4CF00A9E0F4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCC1DC7B4CF00A9E0F4 /* Theme.swift */; };
-		29E2CDEA1DC7B4CF00A9E0F4 /* WxScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCD1DC7B4CF00A9E0F4 /* WxScanner.swift */; };
-		29E2CDEB1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCF1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift */; };
-		29E2CDED1DC7B4CF00A9E0F4 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD21DC7B4CF00A9E0F4 /* CustomNavigationBar.swift */; };
-		29E2CDEE1DC7B4CF00A9E0F4 /* JournalEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD31DC7B4CF00A9E0F4 /* JournalEntryCell.swift */; };
-		29E2CDEF1DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD41DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift */; };
 		29E2CDF01DC7B4CF00A9E0F4 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD51DC7B4CF00A9E0F4 /* MessageCell.swift */; };
-		29E2CDF11DC7B4CF00A9E0F4 /* WeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD61DC7B4CF00A9E0F4 /* WeatherDetailCell.swift */; };
-		29E2CDF21DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD71DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift */; };
 		4E5F852CC0CB83A4C2F8AE7F /* Pods_Marslink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */; };
 		AC11657C1E3F4E9700661B8F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11657B1E3F4E9700661B8F /* FeedViewController.swift */; };
-		AC11657E1E3F6FA300661B8F /* JournalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11657D1E3F6FA300661B8F /* JournalSectionController.swift */; };
 		AC1165801E3FA42200661B8F /* MessageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11657F1E3FA42200661B8F /* MessageSectionController.swift */; };
-		AC1165821E3FB27E00661B8F /* WeatherSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1165811E3FB27E00661B8F /* WeatherSectionController.swift */; };
 		AC4B8DE41E3FE333007EB753 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC4B8DE31E3FE333007EB753 /* GoogleService-Info.plist */; };
 		ACF13C541E438ADC00E58135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF13C531E438ADC00E58135 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -43,30 +30,17 @@
 		2997D4941DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+IGListDiffable.swift"; sourceTree = "<group>"; };
 		29E2CDB51DC7B4CF00A9E0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Marslink/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		29E2CDBA1DC7B4CF00A9E0F4 /* DateSortable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSortable.swift; sourceTree = "<group>"; };
-		29E2CDBB1DC7B4CF00A9E0F4 /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		29E2CDBB1DC7B4CF00A9E0F4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		29E2CDBC1DC7B4CF00A9E0F4 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		29E2CDBD1DC7B4CF00A9E0F4 /* SolFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolFormatter.swift; sourceTree = "<group>"; };
-		29E2CDBE1DC7B4CF00A9E0F4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		29E2CDBF1DC7B4CF00A9E0F4 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		29E2CDC11DC7B4CF00A9E0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E2CDC21DC7B4CF00A9E0F4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29E2CDC31DC7B4CF00A9E0F4 /* OCRAStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAStd.otf; sourceTree = "<group>"; };
-		29E2CDC91DC7B4CF00A9E0F4 /* JournalLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalLoader.swift; sourceTree = "<group>"; };
 		29E2CDCA1DC7B4CF00A9E0F4 /* Pathfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pathfinder.swift; sourceTree = "<group>"; };
 		29E2CDCB1DC7B4CF00A9E0F4 /* TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
 		29E2CDCC1DC7B4CF00A9E0F4 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		29E2CDCD1DC7B4CF00A9E0F4 /* WxScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WxScanner.swift; sourceTree = "<group>"; };
-		29E2CDCF1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicFeedViewController.swift; sourceTree = "<group>"; };
-		29E2CDD21DC7B4CF00A9E0F4 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
-		29E2CDD31DC7B4CF00A9E0F4 /* JournalEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryCell.swift; sourceTree = "<group>"; };
-		29E2CDD41DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryDateCell.swift; sourceTree = "<group>"; };
 		29E2CDD51DC7B4CF00A9E0F4 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		29E2CDD61DC7B4CF00A9E0F4 /* WeatherDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailCell.swift; sourceTree = "<group>"; };
-		29E2CDD71DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSummaryCell.swift; sourceTree = "<group>"; };
 		AC11657B1E3F4E9700661B8F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		AC11657D1E3F6FA300661B8F /* JournalSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalSectionController.swift; sourceTree = "<group>"; };
 		AC11657F1E3FA42200661B8F /* MessageSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSectionController.swift; sourceTree = "<group>"; };
-		AC1165811E3FB27E00661B8F /* WeatherSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSectionController.swift; sourceTree = "<group>"; };
 		AC4B8DE31E3FE333007EB753 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACF13C531E438ADC00E58135 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B9EFE4AB43572E52A0685AB4 /* Pods-Marslink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,12 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				29E2CDBA1DC7B4CF00A9E0F4 /* DateSortable.swift */,
-				29E2CDBB1DC7B4CF00A9E0F4 /* JournalEntry.swift */,
+				29E2CDBB1DC7B4CF00A9E0F4 /* Post.swift */,
 				29E2CDBC1DC7B4CF00A9E0F4 /* Message.swift */,
 				2997D4941DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift */,
-				29E2CDBD1DC7B4CF00A9E0F4 /* SolFormatter.swift */,
-				29E2CDBE1DC7B4CF00A9E0F4 /* User.swift */,
-				29E2CDBF1DC7B4CF00A9E0F4 /* Weather.swift */,
 			);
 			name = Models;
 			path = Marslink/Models;
@@ -150,9 +121,7 @@
 		29E2CDC41DC7B4CF00A9E0F4 /* SectionControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC11657D1E3F6FA300661B8F /* JournalSectionController.swift */,
 				AC11657F1E3FA42200661B8F /* MessageSectionController.swift */,
-				AC1165811E3FB27E00661B8F /* WeatherSectionController.swift */,
 			);
 			name = SectionControllers;
 			path = Marslink/SectionControllers;
@@ -161,11 +130,9 @@
 		29E2CDC81DC7B4CF00A9E0F4 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
-				29E2CDC91DC7B4CF00A9E0F4 /* JournalLoader.swift */,
 				29E2CDCA1DC7B4CF00A9E0F4 /* Pathfinder.swift */,
 				29E2CDCB1DC7B4CF00A9E0F4 /* TextSize.swift */,
 				29E2CDCC1DC7B4CF00A9E0F4 /* Theme.swift */,
-				29E2CDCD1DC7B4CF00A9E0F4 /* WxScanner.swift */,
 			);
 			name = Systems;
 			path = Marslink/Systems;
@@ -174,7 +141,6 @@
 		29E2CDCE1DC7B4CF00A9E0F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				29E2CDCF1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift */,
 				AC11657B1E3F4E9700661B8F /* FeedViewController.swift */,
 			);
 			name = ViewControllers;
@@ -184,12 +150,7 @@
 		29E2CDD11DC7B4CF00A9E0F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				29E2CDD21DC7B4CF00A9E0F4 /* CustomNavigationBar.swift */,
-				29E2CDD31DC7B4CF00A9E0F4 /* JournalEntryCell.swift */,
-				29E2CDD41DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift */,
 				29E2CDD51DC7B4CF00A9E0F4 /* MessageCell.swift */,
-				29E2CDD61DC7B4CF00A9E0F4 /* WeatherDetailCell.swift */,
-				29E2CDD71DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift */,
 			);
 			name = Views;
 			path = Marslink/Views;
@@ -338,30 +299,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E2CDEF1DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift in Sources */,
-				29E2CDE61DC7B4CF00A9E0F4 /* JournalLoader.swift in Sources */,
 				29E2CDE81DC7B4CF00A9E0F4 /* TextSize.swift in Sources */,
-				29E2CDDB1DC7B4CF00A9E0F4 /* JournalEntry.swift in Sources */,
+				29E2CDDB1DC7B4CF00A9E0F4 /* Post.swift in Sources */,
 				2997D4951DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift in Sources */,
 				29E2CDDC1DC7B4CF00A9E0F4 /* Message.swift in Sources */,
-				29E2CDEA1DC7B4CF00A9E0F4 /* WxScanner.swift in Sources */,
 				29E2CDE71DC7B4CF00A9E0F4 /* Pathfinder.swift in Sources */,
-				29E2CDDE1DC7B4CF00A9E0F4 /* User.swift in Sources */,
-				29E2CDEE1DC7B4CF00A9E0F4 /* JournalEntryCell.swift in Sources */,
-				29E2CDF21DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift in Sources */,
 				29E2CDD81DC7B4CF00A9E0F4 /* AppDelegate.swift in Sources */,
-				29E2CDDD1DC7B4CF00A9E0F4 /* SolFormatter.swift in Sources */,
-				AC11657E1E3F6FA300661B8F /* JournalSectionController.swift in Sources */,
 				AC11657C1E3F4E9700661B8F /* FeedViewController.swift in Sources */,
-				29E2CDED1DC7B4CF00A9E0F4 /* CustomNavigationBar.swift in Sources */,
 				AC1165801E3FA42200661B8F /* MessageSectionController.swift in Sources */,
 				29E2CDDA1DC7B4CF00A9E0F4 /* DateSortable.swift in Sources */,
-				AC1165821E3FB27E00661B8F /* WeatherSectionController.swift in Sources */,
-				29E2CDDF1DC7B4CF00A9E0F4 /* Weather.swift in Sources */,
 				29E2CDE91DC7B4CF00A9E0F4 /* Theme.swift in Sources */,
-				29E2CDEB1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift in Sources */,
 				29E2CDF01DC7B4CF00A9E0F4 /* MessageCell.swift in Sources */,
-				29E2CDF11DC7B4CF00A9E0F4 /* WeatherDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,8 +33,8 @@ private func delay(time: Double = 1, execute work: @escaping @convention(block) 
 }
 
 private func lewisMessage(text: String, interval: TimeInterval = 0) -> Message {
-  let user = User(id: 2, name: "cpt.lewis")
-  return Message(date: Date(timeIntervalSinceNow: interval), text: text, user: user)
+  let user = "cpt.lewis"
+  return Message(date: Date(timeIntervalSinceNow: interval), text: text, name: user)
 }
 
 class Pathfinder {

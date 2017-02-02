@@ -10,6 +10,7 @@ import UIKit
 import IGListKit
 
 class MessageSectionController: IGListSectionController {
+    
     var message: Message!
     
     override init() {
@@ -29,7 +30,7 @@ extension MessageSectionController: IGListSectionType {
     func cellForItem(at index: Int) -> UICollectionViewCell {
         let cell = collectionContext?.dequeueReusableCell(of: MessageCell.self, for: self, at: index) as! MessageCell
         cell.messageLabel.text = message.text
-        cell.titleLabel.text = message.user.name.uppercased()
+        cell.titleLabel.text = message.name.uppercased()
         return cell
     }
     func didUpdate(to object: Any) {

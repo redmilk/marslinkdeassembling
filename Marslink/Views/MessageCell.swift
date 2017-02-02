@@ -51,7 +51,7 @@ class MessageCell: UICollectionViewCell {
   
   let statusLabel: UILabel = {
     let label = UILabel()
-    label.layer.borderColor = UIColor.cyan.cgColor
+    label.layer.borderColor = UIColor.brown.cgColor
     label.layer.borderWidth = 1
     label.backgroundColor = UIColor.clear
     label.font = AppFont(size: 8)
@@ -63,7 +63,7 @@ class MessageCell: UICollectionViewCell {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    contentView.backgroundColor = UIColor.cyan
+    contentView.backgroundColor = UIColor.brown
     contentView.addSubview(messageLabel)
     contentView.addSubview(titleLabel)
     contentView.addSubview(statusLabel)

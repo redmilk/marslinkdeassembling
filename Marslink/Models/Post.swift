@@ -20,43 +20,18 @@
  * THE SOFTWARE.
  */
 
-import UIKit
+import Foundation
 
-class WeatherDetailCell: UICollectionViewCell {
+class Post: NSObject, DateSortable {
   
-  let titleLabel: UILabel = {
-    let label = UILabel()
-    label.backgroundColor = UIColor.clear
-    label.font = AppFont()
-    label.textColor = UIColor.white
-    return label
-  }()
+  let date: Date
+  let text: String
+  let name: String
   
-  let detailLabel: UILabel = {
-    let label = UILabel()
-    label.backgroundColor = UIColor.clear
-    label.font = AppFont()
-    label.textColor = UIColor.cyan
-    label.textAlignment = .right
-    return label
-  }()
-  
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-    contentView.addSubview(titleLabel)
-    contentView.addSubview(detailLabel)
-    contentView.backgroundColor = UIColor.blue
-  }
-  
-  required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
-  
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    let insetBounds = UIEdgeInsetsInsetRect(bounds, CommonInsets)
-    titleLabel.frame = insetBounds
-    detailLabel.frame = insetBounds
+  init(date: Date, text: String, name: String) {
+    self.date = date
+    self.text = text
+    self.name = name
   }
   
 }

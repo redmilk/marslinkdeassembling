@@ -10,7 +10,7 @@ import UIKit
 import IGListKit
 
 class FeedViewController: UIViewController {
-
+    
     // MARK: - FIELDS
     lazy var adapter: IGListAdapter = {
         return IGListAdapter(updater: IGListAdapterUpdater(), viewController: self, workingRangeSize: 0)
@@ -18,15 +18,12 @@ class FeedViewController: UIViewController {
     
     @IBOutlet weak var collectionView: IGListCollectionView!
     
-    let loader = JournalEntryLoader()
     let pathfinder = Pathfinder()
-    let wxScanner = WxScanner()
     
     
     // MARK: - VIEW DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
-        loader.loadLatest()
         adapter.collectionView = collectionView
         adapter.dataSource = self
         
@@ -46,9 +43,7 @@ extension FeedViewController: IGListAdapterDataSource {
     
     func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
         // 1
-        var items: [IGListDiffable] = [wxScanner.currentWeather]
-        items += loader.entries as [IGListDiffable]
-        items += pathfinder.messages as [IGListDiffable]
+        let items: [IGListDiffable] = pathfinder.messages as [IGListDiffable]
         // 2
         return items.sorted(by: { (left: Any, right: Any) -> Bool in
             if let left = left as? DateSortable, let right = right as? DateSortable {
@@ -59,13 +54,7 @@ extension FeedViewController: IGListAdapterDataSource {
     }
     
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
-        if object is Message {
-            return MessageSectionController()
-        } else if object is Weather {
-            return WeatherSectionController()
-        } else {
-            return JournalSectionController()
-        }
+        return MessageSectionController()
     }
     
     func emptyView(for listAdapter: IGListAdapter) -> UIView? {
