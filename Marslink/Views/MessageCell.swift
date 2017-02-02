@@ -45,17 +45,17 @@ class MessageCell: UICollectionViewCell {
     let label = UILabel()
     label.backgroundColor = UIColor.clear
     label.font = AppFont(size: 14)
-    label.textColor = UIColor(hex6: 0x42c84b)
+    label.textColor = UIColor.white
     return label
   }()
   
   let statusLabel: UILabel = {
     let label = UILabel()
-    label.layer.borderColor = UIColor(hex6: 0x76879d).cgColor
+    label.layer.borderColor = UIColor.cyan.cgColor
     label.layer.borderWidth = 1
     label.backgroundColor = UIColor.clear
     label.font = AppFont(size: 8)
-    label.textColor = UIColor(hex6: 0x76879d)
+    label.textColor = UIColor.white
     label.textAlignment = .center
     label.text = "NEW MESSAGE"
     return label
@@ -63,7 +63,7 @@ class MessageCell: UICollectionViewCell {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    contentView.backgroundColor = UIColor(hex6: 0x0c1f3f)
+    contentView.backgroundColor = UIColor.cyan
     contentView.addSubview(messageLabel)
     contentView.addSubview(titleLabel)
     contentView.addSubview(statusLabel)

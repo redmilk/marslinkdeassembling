@@ -29,12 +29,13 @@
 		29E2CDF01DC7B4CF00A9E0F4 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD51DC7B4CF00A9E0F4 /* MessageCell.swift */; };
 		29E2CDF11DC7B4CF00A9E0F4 /* WeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD61DC7B4CF00A9E0F4 /* WeatherDetailCell.swift */; };
 		29E2CDF21DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD71DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift */; };
-		29E2CDF51DC7B4E300A9E0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E2CDF31DC7B4E300A9E0F4 /* LaunchScreen.storyboard */; };
 		4E5F852CC0CB83A4C2F8AE7F /* Pods_Marslink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */; };
 		AC11657C1E3F4E9700661B8F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11657B1E3F4E9700661B8F /* FeedViewController.swift */; };
 		AC11657E1E3F6FA300661B8F /* JournalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11657D1E3F6FA300661B8F /* JournalSectionController.swift */; };
 		AC1165801E3FA42200661B8F /* MessageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11657F1E3FA42200661B8F /* MessageSectionController.swift */; };
 		AC1165821E3FB27E00661B8F /* WeatherSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1165811E3FB27E00661B8F /* WeatherSectionController.swift */; };
+		AC4B8DE41E3FE333007EB753 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC4B8DE31E3FE333007EB753 /* GoogleService-Info.plist */; };
+		ACF13C541E438ADC00E58135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF13C531E438ADC00E58135 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,11 +63,12 @@
 		29E2CDD51DC7B4CF00A9E0F4 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		29E2CDD61DC7B4CF00A9E0F4 /* WeatherDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailCell.swift; sourceTree = "<group>"; };
 		29E2CDD71DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSummaryCell.swift; sourceTree = "<group>"; };
-		29E2CDF41DC7B4E300A9E0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC11657B1E3F4E9700661B8F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		AC11657D1E3F6FA300661B8F /* JournalSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalSectionController.swift; sourceTree = "<group>"; };
 		AC11657F1E3FA42200661B8F /* MessageSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSectionController.swift; sourceTree = "<group>"; };
 		AC1165811E3FB27E00661B8F /* WeatherSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSectionController.swift; sourceTree = "<group>"; };
+		AC4B8DE31E3FE333007EB753 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACF13C531E438ADC00E58135 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B9EFE4AB43572E52A0685AB4 /* Pods-Marslink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.debug.xcconfig"; sourceTree = "<group>"; };
 		C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marslink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3FA05C5618EC7BE0845CC7 /* Pods-Marslink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,9 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				29E2CDC11DC7B4CF00A9E0F4 /* Assets.xcassets */,
+				AC4B8DE31E3FE333007EB753 /* GoogleService-Info.plist */,
 				29E2CDC21DC7B4CF00A9E0F4 /* Info.plist */,
-				29E2CDF31DC7B4E300A9E0F4 /* LaunchScreen.storyboard */,
 				29E2CDC31DC7B4CF00A9E0F4 /* OCRAStd.otf */,
+				ACF13C531E438ADC00E58135 /* Main.storyboard */,
 			);
 			name = Resources;
 			path = Marslink/Resources;
@@ -244,6 +247,7 @@
 				TargetAttributes = {
 					2949EE871D8AB4F4005BC671 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZNLBEN9CLK;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -273,8 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E2CDE01DC7B4CF00A9E0F4 /* Assets.xcassets in Resources */,
-				29E2CDF51DC7B4E300A9E0F4 /* LaunchScreen.storyboard in Resources */,
+				AC4B8DE41E3FE333007EB753 /* GoogleService-Info.plist in Resources */,
 				29E2CDE21DC7B4CF00A9E0F4 /* OCRAStd.otf in Resources */,
+				ACF13C541E438ADC00E58135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,17 +366,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		29E2CDF31DC7B4E300A9E0F4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29E2CDF41DC7B4E300A9E0F4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2949EE981D8AB4F4005BC671 /* Debug */ = {
@@ -469,17 +463,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZNLBEN9CLK;
 				INFOPLIST_FILE = "$(SRCROOT)/Marslink/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Marslink;
+				PRODUCT_BUNDLE_IDENTIFIER = apiqa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -490,14 +484,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZNLBEN9CLK;
 				INFOPLIST_FILE = "$(SRCROOT)/Marslink/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Marslink;
+				PRODUCT_BUNDLE_IDENTIFIER = apiqa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

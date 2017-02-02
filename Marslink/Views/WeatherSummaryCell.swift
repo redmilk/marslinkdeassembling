@@ -28,7 +28,7 @@ class WeatherSummaryCell: UICollectionViewCell {
     let label = UILabel()
     label.backgroundColor = UIColor.clear
     label.font = AppFont(size: 30)
-    label.textColor = UIColor(hex6: 0x44758b)
+    label.textColor = UIColor.white
     label.textAlignment = .center
     label.text = ">>"
     label.sizeToFit()
@@ -44,7 +44,7 @@ class WeatherSummaryCell: UICollectionViewCell {
     paragraphStyle.paragraphSpacing = 4
     let subtitleAttributes = [
       NSFontAttributeName: AppFont(size: 14),
-      NSForegroundColorAttributeName: UIColor(hex6: 0x42c84b),
+      NSForegroundColorAttributeName: UIColor.white,
       NSParagraphStyleAttributeName: paragraphStyle
     ]
     let titleAttributes = [
@@ -67,7 +67,7 @@ class WeatherSummaryCell: UICollectionViewCell {
     super.init(frame: frame)
     contentView.addSubview(expandLabel)
     contentView.addSubview(titleLabel)
-    contentView.backgroundColor = UIColor(hex6: 0x0c1f3f)
+    contentView.backgroundColor = UIColor.red
   }
   
   required init?(coder aDecoder: NSCoder) {

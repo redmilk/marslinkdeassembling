@@ -28,13 +28,13 @@ class JournalEntryDateCell: UICollectionViewCell {
     let label = UILabel()
     label.backgroundColor = UIColor.clear
     label.font = AppFont(size: 14)
-    label.textColor = UIColor(hex6: 0x42c84b)
+    label.textColor = UIColor.white
     return label
   }()
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    contentView.backgroundColor = UIColor(hex6: 0x0c1f3f)
+    contentView.backgroundColor = UIColor.darkGray
     contentView.addSubview(label)
   }
   

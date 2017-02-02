@@ -16,11 +16,7 @@ class FeedViewController: UIViewController {
         return IGListAdapter(updater: IGListAdapterUpdater(), viewController: self, workingRangeSize: 0)
     } ()
     
-    let collectionView: IGListCollectionView = {
-        let view = IGListCollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
-        view.backgroundColor = UIColor.black
-        return view
-    } ()
+    @IBOutlet weak var collectionView: IGListCollectionView!
     
     let loader = JournalEntryLoader()
     let pathfinder = Pathfinder()
@@ -31,7 +27,6 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loader.loadLatest()
-        view.addSubview(collectionView)
         adapter.collectionView = collectionView
         adapter.dataSource = self
         
@@ -42,6 +37,7 @@ class FeedViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
+        collectionView.backgroundColor = UIColor.black
     }
     
 }

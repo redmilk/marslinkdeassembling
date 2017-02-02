@@ -40,7 +40,7 @@ class CustomNavigationBar: UINavigationBar {
     label.text = "RECEIVING"
     label.font = AppFont(size: 13)
     label.textAlignment = .center
-    label.textColor = UIColor(hex6: 0x42c84b)
+    label.textColor = UIColor.green
     label.sizeToFit()
     return label
   }()
@@ -59,7 +59,7 @@ class CustomNavigationBar: UINavigationBar {
   
   let highlightLayer: CAShapeLayer = {
     let layer = CAShapeLayer()
-    layer.fillColor = UIColor(hex6: 0x76879D).cgColor
+    layer.fillColor = UIColor.magenta.cgColor
     return layer
   }()
   

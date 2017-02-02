@@ -42,7 +42,7 @@ class JournalEntryCell: UICollectionViewCell {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    contentView.backgroundColor = UIColor(hex6: 0x0c1f3f)
+    contentView.backgroundColor = UIColor.blue
     contentView.addSubview(label)
   }
   

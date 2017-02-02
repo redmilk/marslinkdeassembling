@@ -28,7 +28,7 @@ class WeatherDetailCell: UICollectionViewCell {
     let label = UILabel()
     label.backgroundColor = UIColor.clear
     label.font = AppFont()
-    label.textColor = UIColor(hex6: 0x42c84b)
+    label.textColor = UIColor.white
     return label
   }()
   
@@ -36,7 +36,7 @@ class WeatherDetailCell: UICollectionViewCell {
     let label = UILabel()
     label.backgroundColor = UIColor.clear
     label.font = AppFont()
-    label.textColor = UIColor(hex6: 0x42c84b)
+    label.textColor = UIColor.cyan
     label.textAlignment = .right
     return label
   }()
@@ -45,7 +45,7 @@ class WeatherDetailCell: UICollectionViewCell {
     super.init(frame: frame)
     contentView.addSubview(titleLabel)
     contentView.addSubview(detailLabel)
-    contentView.backgroundColor = UIColor(hex6: 0x0c1f3f)
+    contentView.backgroundColor = UIColor.blue
   }
   
   required init?(coder aDecoder: NSCoder) {
