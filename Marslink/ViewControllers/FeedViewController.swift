@@ -26,6 +26,12 @@ class FeedViewController: UIViewController {
         posts.append(Post(date: Date(timeIntervalSinceNow: -8), text: "Taste your fear...", name: "Kabal"))
         return posts
     }()
+    var versusPosts: [VersusPost] = {
+        var versusPosts = [VersusPost]()
+        versusPosts.append(VersusPost(name: "Girl", header: "Beauty", imageOne: "1", imageTwo: "2", titleOne: "Chick", titleTwo: "Hottie", date: Date(timeIntervalSinceNow: -100)))
+        versusPosts.append(VersusPost())
+        return versusPosts
+    }()
     
     // MARK: - VIEW DID LOAD
     override func viewDidLoad() {
@@ -46,8 +52,18 @@ class FeedViewController: UIViewController {
         posts.append(Post(date: Date(timeIntervalSinceNow: 0), text: "Hi. I'm the GList!", name: "GList"))
         adapter.performUpdates(animated: true)
     }
+    func addVersus() {
+        // add versus code
+        versusPosts.append(VersusPost(name: "Girl", header: "Select hottest one", imageOne: "3", imageTwo: "4", titleOne: "Lips", titleTwo: "Cuttie", date: Date(timeIntervalSinceNow: 12)))
+        adapter.performUpdates(animated: true, completion: nil)
+    }
+    
     @IBAction func tryThisFuncHaha(_ sender: UIBarButtonItem) {
         addPost()
+    }
+    
+    @IBAction func addVersusPostButton(_ sender: UIBarButtonItem) {
+        addVersus()
     }
     
 }
@@ -58,6 +74,7 @@ extension FeedViewController: IGListAdapterDataSource {
         // 1
         var items: [IGListDiffable] = messager.messages as [IGListDiffable]
         items += posts as [IGListDiffable]
+        items += versusPosts as [IGListDiffable]
         // 2
         return items.sorted(by: { (left: Any, right: Any) -> Bool in
             if let left = left as? DateSortable, let right = right as? DateSortable {
@@ -70,8 +87,10 @@ extension FeedViewController: IGListAdapterDataSource {
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
         if object is Message {
             return MessageSectionController()
-        } else {
+        } else if object is Post {
             return PostSectionController()
+        } else {
+            return VersusSectionController()
         }
     }
     
