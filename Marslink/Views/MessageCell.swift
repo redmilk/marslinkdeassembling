@@ -25,10 +25,9 @@ import UIKit
 class MessageCell: UICollectionViewCell {
   
   static let titleHeight: CGFloat = 30
-  static let font = AppFont()
   
   static func cellSize(width: CGFloat, text: String) -> CGSize {
-    let labelBounds = TextSize.size(text, font: MessageCell.font, width: width, insets: CommonInsets)
+    let labelBounds = TextSize.size(text, font: appFont, width: width, insets: CommonInsets)
     return CGSize(width: width, height: labelBounds.height + MessageCell.titleHeight)
   }
   
@@ -36,16 +35,16 @@ class MessageCell: UICollectionViewCell {
     let label = UILabel()
     label.backgroundColor = UIColor.clear
     label.numberOfLines = 0
-    label.font = MessageCell.font
     label.textColor = UIColor.white
+    label.font = appFont
     return label
   }()
   
   let titleLabel: UILabel = {
     let label = UILabel()
     label.backgroundColor = UIColor.clear
-    label.font = AppFont(size: 14)
     label.textColor = UIColor.white
+    label.font = appFont
     return label
   }()
   
@@ -54,9 +53,9 @@ class MessageCell: UICollectionViewCell {
     label.layer.borderColor = UIColor.brown.cgColor
     label.layer.borderWidth = 1
     label.backgroundColor = UIColor.clear
-    label.font = AppFont(size: 8)
     label.textColor = UIColor.white
     label.textAlignment = .center
+    label.font = appFont
     label.text = "NEW MESSAGE"
     return label
   }()

@@ -25,6 +25,5 @@ import UIKit
 
 let CommonInsets = UIEdgeInsets(top: 8, left: 15, bottom: 8, right: 15)
 
-func AppFont(size: CGFloat = 18) -> UIFont {
-  return UIFont(name: "OCRAStd", size: size)!
-}
+
+let appFont = UIFont.systemFont(ofSize: 20, weight: UIFontWeightThin)
