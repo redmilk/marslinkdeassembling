@@ -23,9 +23,11 @@
 		AC15F9F81E45148100ED3F99 /* VersusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F9F71E45148100ED3F99 /* VersusCell.swift */; };
 		AC15F9FA1E4514E200ED3F99 /* VersusPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F9F91E4514E200ED3F99 /* VersusPost.swift */; };
 		AC15F9FC1E4517FD00ED3F99 /* VersusSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F9FB1E4517FD00ED3F99 /* VersusSectionController.swift */; };
-		AC4B8DE41E3FE333007EB753 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC4B8DE31E3FE333007EB753 /* GoogleService-Info.plist */; };
+		AC24CC241E45E51C00E3331C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC24CC231E45E51C00E3331C /* GoogleService-Info.plist */; };
+		AC24CC261E45FEF600E3331C /* VersusGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24CC251E45FEF600E3331C /* VersusGenerator.swift */; };
 		AC4DBEBF1E43B27B00C5436C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DBEBE1E43B27B00C5436C /* PostCell.swift */; };
 		AC4DBEC11E43B3BD00C5436C /* PostSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DBEC01E43B3BD00C5436C /* PostSectionController.swift */; };
+		AC61A4571E454AA500FAEDFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61A4561E454AA500FAEDFF /* LoginViewController.swift */; };
 		ACF13C541E438ADC00E58135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF13C531E438ADC00E58135 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -47,9 +49,11 @@
 		AC15F9F71E45148100ED3F99 /* VersusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersusCell.swift; sourceTree = "<group>"; };
 		AC15F9F91E4514E200ED3F99 /* VersusPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersusPost.swift; sourceTree = "<group>"; };
 		AC15F9FB1E4517FD00ED3F99 /* VersusSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersusSectionController.swift; sourceTree = "<group>"; };
-		AC4B8DE31E3FE333007EB753 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC24CC231E45E51C00E3331C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC24CC251E45FEF600E3331C /* VersusGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersusGenerator.swift; sourceTree = "<group>"; };
 		AC4DBEBE1E43B27B00C5436C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = ../Resources/PostCell.swift; sourceTree = "<group>"; };
 		AC4DBEC01E43B3BD00C5436C /* PostSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSectionController.swift; sourceTree = "<group>"; };
+		AC61A4561E454AA500FAEDFF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ACF13C531E438ADC00E58135 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B9EFE4AB43572E52A0685AB4 /* Pods-Marslink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.debug.xcconfig"; sourceTree = "<group>"; };
 		C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marslink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,8 +121,8 @@
 		29E2CDC01DC7B4CF00A9E0F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC24CC231E45E51C00E3331C /* GoogleService-Info.plist */,
 				29E2CDC11DC7B4CF00A9E0F4 /* Assets.xcassets */,
-				AC4B8DE31E3FE333007EB753 /* GoogleService-Info.plist */,
 				29E2CDC21DC7B4CF00A9E0F4 /* Info.plist */,
 				ACF13C531E438ADC00E58135 /* Main.storyboard */,
 			);
@@ -143,6 +147,7 @@
 				29E2CDCA1DC7B4CF00A9E0F4 /* Messager.swift */,
 				29E2CDCB1DC7B4CF00A9E0F4 /* TextSize.swift */,
 				29E2CDCC1DC7B4CF00A9E0F4 /* Theme.swift */,
+				AC24CC251E45FEF600E3331C /* VersusGenerator.swift */,
 			);
 			name = Systems;
 			path = Marslink/Systems;
@@ -151,6 +156,7 @@
 		29E2CDCE1DC7B4CF00A9E0F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC61A4561E454AA500FAEDFF /* LoginViewController.swift */,
 				AC11657B1E3F4E9700661B8F /* FeedViewController.swift */,
 			);
 			name = ViewControllers;
@@ -250,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E2CDE01DC7B4CF00A9E0F4 /* Assets.xcassets in Resources */,
-				AC4B8DE41E3FE333007EB753 /* GoogleService-Info.plist in Resources */,
+				AC24CC241E45E51C00E3331C /* GoogleService-Info.plist in Resources */,
 				ACF13C541E438ADC00E58135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E2CDE81DC7B4CF00A9E0F4 /* TextSize.swift in Sources */,
+				AC24CC261E45FEF600E3331C /* VersusGenerator.swift in Sources */,
 				29E2CDDB1DC7B4CF00A9E0F4 /* Post.swift in Sources */,
 				29E2CDDC1DC7B4CF00A9E0F4 /* Message.swift in Sources */,
 				29E2CDE71DC7B4CF00A9E0F4 /* Messager.swift in Sources */,
@@ -323,6 +330,7 @@
 				AC4DBEC11E43B3BD00C5436C /* PostSectionController.swift in Sources */,
 				29E2CDF01DC7B4CF00A9E0F4 /* MessageCell.swift in Sources */,
 				AC15F9F81E45148100ED3F99 /* VersusCell.swift in Sources */,
+				AC61A4571E454AA500FAEDFF /* LoginViewController.swift in Sources */,
 				AC4DBEBF1E43B27B00C5436C /* PostCell.swift in Sources */,
 				AC15F9FA1E4514E200ED3F99 /* VersusPost.swift in Sources */,
 				AC13BC431E4494B2009AEB49 /* NSObject+IGListDiffable.swift in Sources */,

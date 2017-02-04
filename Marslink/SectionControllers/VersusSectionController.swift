@@ -30,8 +30,8 @@ extension VersusSectionController: IGListSectionType {
         cell.headerLabel.text = self.versusPost.header
         cell.titleOneLabel.text = self.versusPost.titleOne
         cell.titleTwoLabel.text = self.versusPost.titleTwo
-        cell.imageOne.image = UIImage(named: self.versusPost.imageOnePath)
-        cell.imageTwo.image = UIImage(named: self.versusPost.imageTwoPath)
+        cell.imageOne.downloadImage(from: self.versusPost.imageOnePath)
+        cell.imageTwo.downloadImage(from: self.versusPost.imageTwoPath)
         return cell
     }
     func didUpdate(to object: Any) {

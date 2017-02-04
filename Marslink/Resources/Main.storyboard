@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nUG-it-6Gk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mTx-e9-JXt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
         <!--Feed View Controller-->
         <scene sceneID="FTq-01-gj8">
             <objects>
-                <viewController id="nUG-it-6Gk" customClass="FeedViewController" customModule="Marslink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" id="nUG-it-6Gk" customClass="FeedViewController" customModule="Marslink" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Zo-3M-NXz"/>
                         <viewControllerLayoutGuide type="bottom" id="HfT-MX-xZl"/>
@@ -197,5 +197,123 @@
             </objects>
             <point key="canvasLocation" x="-44" y="152.47376311844079"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="bLs-zQ-9uM">
+            <objects>
+                <viewController id="mTx-e9-JXt" customClass="LoginViewController" customModule="Marslink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8cp-Uf-M7u"/>
+                        <viewControllerLayoutGuide type="bottom" id="xEa-H2-bph"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ri7-aL-q9k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earthGreat" translatesAutoresizingMaskIntoConstraints="NO" id="Q0b-ve-i5k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-sunny-cloud-1" translatesAutoresizingMaskIntoConstraints="NO" id="xne-5t-I6l">
+                                <rect key="frame" x="-120" y="131" width="159" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-sunny-cloud-2" translatesAutoresizingMaskIntoConstraints="NO" id="NfS-Fu-oaH">
+                                <rect key="frame" x="217" y="154" width="158" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-sunny-cloud-3" translatesAutoresizingMaskIntoConstraints="NO" id="aNC-2i-ZrF">
+                                <rect key="frame" x="252" y="368" width="74" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-sunny-cloud-4" translatesAutoresizingMaskIntoConstraints="NO" id="U9A-a9-Xz9">
+                                <rect key="frame" x="20" y="396" width="115" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Chat ^__^" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHh-Mo-Lh6">
+                                <rect key="frame" x="48" y="80" width="280" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkq-0i-cls">
+                                <rect key="frame" x="112" y="218" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="28"/>
+                                <color key="tintColor" red="0.0" green="0.40784313729999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login" destination="mTx-e9-JXt" eventType="touchUpInside" id="MtH-Mg-sKV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="asd@asd.asd" borderStyle="roundedRect" placeholder="login or email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udG-W1-tm6">
+                                <rect key="frame" x="38" y="131" width="300" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ez8-cI-z8E">
+                                <rect key="frame" x="38" y="164" width="300" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckO-5p-LXm">
+                                <rect key="frame" x="112" y="271" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="28"/>
+                                <color key="tintColor" red="0.0" green="0.40784313729999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="mTx-e9-JXt" eventType="touchUpInside" id="yuR-mh-Ft5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ez8-cI-z8E" firstAttribute="centerX" secondItem="ri7-aL-q9k" secondAttribute="centerX" id="CLu-Nc-J0o"/>
+                            <constraint firstItem="ckO-5p-LXm" firstAttribute="centerY" secondItem="ri7-aL-q9k" secondAttribute="centerY" constant="-40" id="D7z-9W-mR4"/>
+                            <constraint firstItem="jHh-Mo-Lh6" firstAttribute="height" secondItem="ri7-aL-q9k" secondAttribute="height" constant="-633" id="JJ1-fd-x9O"/>
+                            <constraint firstItem="ez8-cI-z8E" firstAttribute="width" secondItem="ri7-aL-q9k" secondAttribute="width" multiplier="0.8" id="Jrx-3l-uD3"/>
+                            <constraint firstItem="jHh-Mo-Lh6" firstAttribute="width" secondItem="ri7-aL-q9k" secondAttribute="width" constant="-95" id="Mj8-3D-x1r"/>
+                            <constraint firstItem="Xkq-0i-cls" firstAttribute="width" secondItem="ri7-aL-q9k" secondAttribute="width" multiplier="0.4" id="OkU-la-kgp"/>
+                            <constraint firstItem="udG-W1-tm6" firstAttribute="width" secondItem="ri7-aL-q9k" secondAttribute="width" multiplier="0.8" id="Qdj-q3-aT3"/>
+                            <constraint firstItem="udG-W1-tm6" firstAttribute="centerX" secondItem="ri7-aL-q9k" secondAttribute="centerX" id="VYm-la-z6f"/>
+                            <constraint firstItem="ckO-5p-LXm" firstAttribute="centerX" secondItem="ri7-aL-q9k" secondAttribute="centerX" constant="-0.5" id="XaB-II-xz7"/>
+                            <constraint firstItem="udG-W1-tm6" firstAttribute="centerY" secondItem="ri7-aL-q9k" secondAttribute="centerY" constant="-187.5" id="Xhn-1Z-3QW"/>
+                            <constraint firstItem="jHh-Mo-Lh6" firstAttribute="centerY" secondItem="ri7-aL-q9k" secondAttribute="centerY" constant="-236.5" id="e6G-ae-DhC"/>
+                            <constraint firstItem="Xkq-0i-cls" firstAttribute="centerX" secondItem="ri7-aL-q9k" secondAttribute="centerX" constant="-0.5" id="gU4-hq-Bu0"/>
+                            <constraint firstItem="ez8-cI-z8E" firstAttribute="centerY" secondItem="ri7-aL-q9k" secondAttribute="centerY" constant="-154.5" id="owp-bG-43P"/>
+                            <constraint firstItem="Xkq-0i-cls" firstAttribute="centerY" secondItem="ri7-aL-q9k" secondAttribute="centerY" constant="-93" id="tQW-ji-bBp"/>
+                            <constraint firstItem="ckO-5p-LXm" firstAttribute="width" secondItem="ri7-aL-q9k" secondAttribute="width" multiplier="0.4" id="vf4-zT-1gq"/>
+                            <constraint firstItem="jHh-Mo-Lh6" firstAttribute="centerX" secondItem="ri7-aL-q9k" secondAttribute="centerX" id="xXH-nF-5Me"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cloud1" destination="xne-5t-I6l" id="GOL-qc-etT"/>
+                        <outlet property="cloud2" destination="NfS-Fu-oaH" id="1Tg-ak-9wR"/>
+                        <outlet property="cloud3" destination="aNC-2i-ZrF" id="UMB-BD-7Qt"/>
+                        <outlet property="cloud4" destination="U9A-a9-Xz9" id="lk2-vC-y0K"/>
+                        <outlet property="heading" destination="jHh-Mo-Lh6" id="i3E-ay-QDU"/>
+                        <outlet property="loginButton" destination="Xkq-0i-cls" id="5H1-ON-4OP"/>
+                        <outlet property="password" destination="ez8-cI-z8E" id="out-uL-lOj"/>
+                        <outlet property="signUpButton" destination="ckO-5p-LXm" id="dGh-th-2F7"/>
+                        <outlet property="username" destination="udG-W1-tm6" id="AoB-GF-XgL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E84-qn-BcC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-873" y="152"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="bg-sunny-cloud-1" width="159" height="50"/>
+        <image name="bg-sunny-cloud-2" width="138" height="49"/>
+        <image name="bg-sunny-cloud-3" width="74" height="35"/>
+        <image name="bg-sunny-cloud-4" width="115" height="50"/>
+        <image name="earthGreat" width="640" height="1136"/>
+    </resources>
 </document>

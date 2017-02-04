@@ -10,13 +10,13 @@ import Foundation
 
 class VersusPost: NSObject, DateSortable {
     
-    let name: String
-    let header: String
-    let imageOnePath: String
-    let imageTwoPath: String
-    let titleOne: String
-    let titleTwo: String
-    let date: Date
+    var name: String
+    var header: String
+    var imageOnePath: String
+    var imageTwoPath: String
+    var titleOne: String
+    var titleTwo: String
+    var date: Date
     
     init(name: String = "Default",
          header: String = "Default Header",
