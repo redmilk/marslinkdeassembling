@@ -16,4 +16,10 @@ class VersusCell: UICollectionViewCell {
     @IBOutlet weak var titleOneLabel: UILabel!
     @IBOutlet weak var titleTwoLabel: UILabel!
     @IBOutlet weak var labelVS: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        imageOne.image = UIImage(named: "photoalbum")
+        imageTwo.image = UIImage(named: "photoalbum")
+    }
 }

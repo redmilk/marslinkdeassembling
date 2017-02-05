@@ -51,6 +51,7 @@
 		AC15F9FB1E4517FD00ED3F99 /* VersusSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersusSectionController.swift; sourceTree = "<group>"; };
 		AC24CC231E45E51C00E3331C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC24CC251E45FEF600E3331C /* VersusGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersusGenerator.swift; sourceTree = "<group>"; };
+		AC24CC291E463FE700E3331C /* Marslink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Marslink-Bridging-Header.h"; sourceTree = "<group>"; };
 		AC4DBEBE1E43B27B00C5436C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = ../Resources/PostCell.swift; sourceTree = "<group>"; };
 		AC4DBEC01E43B3BD00C5436C /* PostSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSectionController.swift; sourceTree = "<group>"; };
 		AC61A4561E454AA500FAEDFF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				29E2CDC11DC7B4CF00A9E0F4 /* Assets.xcassets */,
 				29E2CDC21DC7B4CF00A9E0F4 /* Info.plist */,
 				ACF13C531E438ADC00E58135 /* Main.storyboard */,
+				AC24CC291E463FE700E3331C /* Marslink-Bridging-Header.h */,
 			);
 			name = Resources;
 			path = Marslink/Resources;
@@ -227,7 +229,7 @@
 					2949EE871D8AB4F4005BC671 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = ZNLBEN9CLK;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -443,6 +445,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marslink/Resources/Marslink-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apiqa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marslink/Resources/Marslink-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,27 +10,8 @@ import UIKit
 import IGListKit
 import FirebaseDatabase
 import FirebaseAuth
-//download image into image view
-extension UIImageView {
-    func downloadImage(from imgURL: String!) {
-        
-        let url = URLRequest(url: URL(string: imgURL)!)
-        
-        let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
-            
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.image = UIImage(data: data!)
-            }
-            
-        })
-        task.resume()
-    }
-}
+
+
 // ////////////////// DELEG ///////////////////////
 extension FeedViewController: VersusGeneratorDelegate {
     func versusDidUpdatePostsArray(generator: VersusGenerator) {
@@ -110,7 +91,6 @@ class FeedViewController: UIViewController {
         messager.delegate = self
         //generator delegate
         generator.delegate = self
-        
         messager.connect()
         
         // MARK: - firebase
@@ -118,17 +98,22 @@ class FeedViewController: UIViewController {
         dataBaseHandle = ref!.child("vs").child("posts").observe(.childAdded, with: { (snapshot) in
             let foo = snapshot.value as? [String : AnyObject]
             if let post = foo {
-                    if let author = post["author"] as? String, let header = post["header"] as? String, let _ = post["likes"] as? Int, let image1 = post["pathToImage1"] as? String, let image2 = post["pathToImage2"] as? String, let _ = post["postID"] as? String {
-                        let vsPost = VersusPost()
-                        vsPost.name = author
-                        vsPost.header = header
-                        vsPost.imageOnePath = image1
-                        vsPost.imageTwoPath = image2
-                        // it should be at Versus Generator
-                        self.generator.versusPosts.append(vsPost)
-                        //self.adapter.performUpdates(animated: true, completion: nil)
-                    }
+                if let author = post["author"] as? String,
+                    let header = post["header"] as? String,
+                    let _ = post["likes"] as? Int,
+                    let image1 = post["pathToImage1"] as? String,
+                    let image2 = post["pathToImage2"] as? String,
+                    let _ = post["postID"] as? String,
+                    let labelOne = post["labelOne"] as? String,
+                    let labelTwo = post["labelTwo"] as? String {
+                    
+                    let vsPost = VersusPost(name: author, header: header, imageOne: image1, imageTwo: image2, titleOne: labelOne, titleTwo: labelTwo, date: Date(timeIntervalSinceNow: -100))
+                    
+                    // it should be at Versus Generator
+                    self.generator.versusPosts.append(vsPost)
+                    //self.adapter.performUpdates(animated: true, completion: nil)
                 }
+            }
         })
     }
     

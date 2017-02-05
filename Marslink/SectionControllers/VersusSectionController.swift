@@ -23,15 +23,18 @@ extension VersusSectionController: IGListSectionType {
         return 1
     }
     func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext!.containerSize.width, height: collectionContext!.containerSize.height)
+        return CGSize(width: collectionContext!.containerSize.width, height: 186.0)
     }
     func cellForItem(at index: Int) -> UICollectionViewCell {
         let cell = collectionContext!.dequeueReusableCellFromStoryboard(withIdentifier: "VersusCell", for: self, at: index) as! VersusCell
         cell.headerLabel.text = self.versusPost.header
         cell.titleOneLabel.text = self.versusPost.titleOne
         cell.titleTwoLabel.text = self.versusPost.titleTwo
-        cell.imageOne.downloadImage(from: self.versusPost.imageOnePath)
-        cell.imageTwo.downloadImage(from: self.versusPost.imageTwoPath)
+        cell.headerLabel.text = self.versusPost.header
+        cell.imageOne.sd_setImage(with: URL(string: self.versusPost.imageOnePath), placeholderImage: UIImage(named: "photoalbum"), options: [.avoidAutoSetImage, .progressiveDownload])
+        
+        cell.imageTwo.sd_setImage(with: URL(string: self.versusPost.imageTwoPath), placeholderImage: UIImage(named: "photoalbum"), options: [.avoidAutoSetImage, .progressiveDownload])
+        
         return cell
     }
     func didUpdate(to object: Any) {
